@@ -1,0 +1,8 @@
+.venv/
+tmp/
+audit_local.py
+data/processed/*
+reports/test_predictions.parquet
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/

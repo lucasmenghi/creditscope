@@ -1,0 +1,43 @@
+{
+  "source": "https://www.kaggle.com/competitions/home-credit-default-risk/data",
+  "source_sha256": "4e7a243b13f6e3d40f682a9a0cfd59c70910ca6c5a4289f71ca1f25efbd8e3de",
+  "rows": 307511,
+  "positives": 24825,
+  "target_description": "Target variable (1 - client with payment difficulties: he/she had late payment more than X days on at least one of the first Y installments of the loan in our sample, 0 - all other cases)",
+  "splits": {
+    "calibration": 30751,
+    "development": 30751,
+    "policy": 15375,
+    "test": 46128,
+    "train": 184506
+  },
+  "target_rates": {
+    "calibration": 0.08074534161490683,
+    "development": 0.08071282234724074,
+    "policy": 0.08071544715447154,
+    "test": 0.08073187651751648,
+    "train": 0.08072908198107379
+  },
+  "date_audit": {
+    "bureau_rows": 1716428,
+    "bureau_excluded_future_or_unknown": 17,
+    "previous_rows": 1670214,
+    "previous_excluded": 0,
+    "installment_rows": 13605401,
+    "installment_excluded_future_or_missing": 2905
+  },
+  "etl_bridge": {
+    "available": true,
+    "rows": 307511,
+    "same_customer_ids": true,
+    "same_targets": true
+  },
+  "excluded_model_fields": [
+    "SK_ID_CURR",
+    "TARGET",
+    "CODE_GENDER",
+    "split"
+  ],
+  "cutoff": "Relative day 0 (current application); bureau credit and update <=0; previous decision <=0; installment due and payment <=0. Missing dates excluded. Historical tables remain retrospective snapshots; exact field availability is not proven.",
+  "validation": "Stratified independent customers, not temporal: no global application calendar available."
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "capacity": 5,
+    "selected": {
+      "queue": 2307,
+      "identified": 791,
+      "precision": 0.34286952752492417,
+      "recall": 0.212406015037594,
+      "lift": 4.247015458020865
+    },
+    "logistic_baseline": {
+      "queue": 2307,
+      "identified": 737,
+      "precision": 0.31946250541829213,
+      "recall": 0.19790547798066596,
+      "lift": 3.9570801423026256
+    }
+  },
+  {
+    "capacity": 10,
+    "selected": {
+      "queue": 4613,
+      "identified": 1286,
+      "precision": 0.2787773683069586,
+      "recall": 0.34532760472610097,
+      "lift": 3.453126327943981
+    },
+    "logistic_baseline": {
+      "queue": 4613,
+      "identified": 1195,
+      "precision": 0.2590505094298721,
+      "recall": 0.32089151450053705,
+      "lift": 3.2087760201345703
+    }
+  },
+  {
+    "capacity": 15,
+    "selected": {
+      "queue": 6920,
+      "identified": 1670,
+      "precision": 0.24132947976878613,
+      "recall": 0.44844253490870034,
+      "lift": 2.9892712789405387
+    },
+    "logistic_baseline": {
+      "queue": 6920,
+      "identified": 1579,
+      "precision": 0.22817919075144508,
+      "recall": 0.4240064446831364,
+      "lift": 2.8263828439803054
+    }
+  },
+  {
+    "capacity": 20,
+    "selected": {
+      "queue": 9226,
+      "identified": 1955,
+      "precision": 0.2119011489269456,
+      "recall": 0.5249731471535983,
+      "lift": 2.6247519327879014
+    },
+    "logistic_baseline": {
+      "queue": 9226,
+      "identified": 1888,
+      "precision": 0.20463906351615002,
+      "recall": 0.5069817400644469,
+      "lift": 2.5347987974954265
+    }
+  },
+  {
+    "capacity": 30,
+    "selected": {
+      "queue": 13839,
+      "identified": 2459,
+      "precision": 0.1776862490064311,
+      "recall": 0.66031149301826,
+      "lift": 2.2009428824298207
+    },
+    "logistic_baseline": {
+      "queue": 13839,
+      "identified": 2363,
+      "precision": 0.170749331599104,
+      "recall": 0.6345327604726101,
+      "lift": 2.1150174994638746
+    }
+  },
+  {
+    "capacity": 40,
+    "selected": {
+      "queue": 18452,
+      "identified": 2820,
+      "precision": 0.1528289616301756,
+      "recall": 0.757250268528464,
+      "lift": 1.8930435934685121
+    },
+    "logistic_baseline": {
+      "queue": 18452,
+      "identified": 2761,
+      "precision": 0.14963147626273574,
+      "recall": 0.74140708915145,
+      "lift": 1.8534373622576459
+    }
+  },
+  {
+    "capacity": 50,
+    "selected": {
+      "queue": 23064,
+      "identified": 3076,
+      "precision": 0.1333680194242109,
+      "recall": 0.8259935553168636,
+      "lift": 1.6519871106337272
+    },
+    "logistic_baseline": {
+      "queue": 23064,
+      "identified": 3029,
+      "precision": 0.13133021158515434,
+      "recall": 0.8133727175080558,
+      "lift": 1.6267454350161115
+    }
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "seed": 42,
+  "candidates": {
+    "logistic_c01": {
+      "kind": "logistic",
+      "C": 0.1
+    },
+    "logistic_c1": {
+      "kind": "logistic",
+      "C": 1
+    },
+    "lightgbm_15": {
+      "kind": "lightgbm",
+      "leaves": 15,
+      "trees": 300
+    },
+    "lightgbm_31": {
+      "kind": "lightgbm",
+      "leaves": 31,
+      "trees": 450
+    }
+  },
+  "selected": "lightgbm_31",
+  "selection": "Highest average precision in separate stratified development customers; single split, no cross-validation claim",
+  "split_sizes": {
+    "calibration": 30751,
+    "development": 30751,
+    "policy": 15375,
+    "test": 46128,
+    "train": 184506
+  },
+  "threshold_rule": "80th percentile of calibrated policy scores, frozen before final test",
+  "thresholds": {
+    "selected": 0.1168494696132467,
+    "logistic_baseline": 0.11762497155218293
+  },
+  "raw_inputs": [
+    "NAME_CONTRACT_TYPE",
+    "NAME_INCOME_TYPE",
+    "NAME_EDUCATION_TYPE",
+    "NAME_HOUSING_TYPE",
+    "AMT_INCOME_TOTAL",
+    "AMT_CREDIT",
+    "AMT_ANNUITY",
+    "AMT_GOODS_PRICE",
+    "DAYS_BIRTH",
+    "DAYS_EMPLOYED",
+    "CNT_CHILDREN",
+    "REGION_RATING_CLIENT",
+    "EXT_SOURCE_1",
+    "EXT_SOURCE_2",
+    "EXT_SOURCE_3",
+    "QTD_CREDITOS_BUREAU",
+    "TOTAL_DIVIDA_BUREAU",
+    "MEDIA_DIAS_ATRASO_BUREAU",
+    "QTD_APLICACOES_ANTERIORES",
+    "QTD_RECUSAS_ANTERIORES",
+    "ATRASO_MEDIO_PAGAMENTO",
+    "QTD_PARCELAS_ATRASADAS"
+  ],
+  "target": "TARGET=1, payment difficulties under competition label definition",
+  "validation": "Independent customer holdout, not temporal validation"
+}
